@@ -1,0 +1,34 @@
+Agendamento de backups:
+
+Determine a frequência de backup adequada para o seu banco de dados, levando em consideração o volume de dados, a importância dos dados e os requisitos de recuperação.
+Defina um cronograma para realizar backups regulares, garantindo que o tempo de inatividade seja mínimo e que os backups sejam armazenados em um local seguro.
+Seleção do método de backup:
+
+Escolha o método de backup apropriado para o seu banco de dados, considerando a estrutura e a tecnologia do banco de dados em uso.
+Configure backups completos e também backups incrementais ou diferenciais, dependendo das suas necessidades e recursos disponíveis.
+Armazenamento seguro de backups:
+
+Armazene os backups em um local seguro e separado do ambiente de produção, garantindo proteção contra falhas de hardware, desastres naturais e ataques cibernéticos.
+Considere o uso de criptografia para proteger os backups em repouso e em trânsito.
+Teste de restore:
+
+Periodicamente, teste o processo de restore dos backups para garantir que os dados possam ser recuperados com sucesso quando necessário.
+Realize testes de restore em um ambiente separado para evitar impactos no ambiente de produção.
+Verifique a integridade dos dados restaurados e execute testes de funcionalidade para garantir que todas as informações críticas estejam sendo recuperadas corretamente.
+Checagem de integridade periódica:
+
+Agende rotinas regulares de verificação de integridade do banco de dados para identificar possíveis problemas ou corrupção de dados.
+Utilize ferramentas específicas do sistema de gerenciamento de banco de dados ou consultas SQL para verificar a consistência dos dados, a integridade das tabelas, índices e relacionamentos.
+Execute verificações de integridade antes e depois de realizar backups ou restores para garantir a saúde dos dados em todo o processo.
+Implementação de roles para segurança:
+
+Identifique as diferentes funções e responsabilidades dos usuários que acessam o banco de dados.
+Crie roles para cada função, utilizando o comando CREATE ROLE.
+Atribua as permissões apropriadas a cada role, utilizando o comando GRANT.
+Atribua as roles aos usuários do banco de dados, utilizando o comando GRANT.
+Revogue permissões desnecessárias, utilizando o comando REVOKE.
+Gerencie regularmente as permissões atribuídas a cada role, removendo ou atualizando conforme necessário.
+Documentação e monitoramento:
+
+Mantenha uma documentação atualizada de toda a rotina de administração do banco de dados, incluindo detalhes sobre backups, restores, verificações de integridade e segurança com roles.
+Implemente um sistema de monitoramento contínuo para identificar problemas de desempenho, espaço em disco insuficiente, eventos de segurança e violações de políticas.

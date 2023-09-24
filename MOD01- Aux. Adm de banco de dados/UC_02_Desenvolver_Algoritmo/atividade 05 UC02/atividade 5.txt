@@ -1,0 +1,700 @@
+Pergunta 1
+10 em 10 pontos
+
+Correta	
+Execute o algoritmo neste primeiro momento. A última linha de resultado obtido na tela é:
+
+Resposta Selecionada:	
+b. 
+0 0 0 0 0 0 0 0 0 0
+
+Respostas:	
+a. 
+Apresenta erro de execução
+
+b. 
+0 0 0 0 0 0 0 0 0 0
+
+c. 
+0 1 2 3 4 5 6 7 8 9
+
+d. 
+9 10 7 5 4 11 15 2 10 3
+
+Comentário da resposta:	
+Parabéns! Como o vetor não foi inicializado com valores, o resultado é 0 0 0 0 0 0 0 0 0 0.
+
+Pergunta 2
+10 em 10 pontos
+
+Correta	
+Note que os zeros são mostrados em várias linhas. Qual dos trechos a seguir é responsável por isso?
+
+Resposta Selecionada:	
+b. 
+Procedimento exibeVetor() invocado em ordena().
+
+Respostas:	
+a. 
+Função utl.numero_elementos() invocada em ordena().
+
+b. 
+Procedimento exibeVetor() invocado em ordena().
+
+c. 
+Procedimento exibeVetor() invocado em inicio() na linha 100, antes da chamada a ordena().
+
+d. 
+Função checaAnteriores() invocada no procedimento ordena().
+
+Comentário da resposta:	
+Parabéns! O procedimento exibeVetor() é chamado em cada iteração do laço principal da ordenação, para que fique mais fácil acompanhar a evolução do resultado.
+
+Pergunta 3
+10 em 10 pontos
+
+Correta	
+Além de mostrar apenas zeros, não é possível informar dados para a ordenação. Qual função deve ser invocada antes da chamada para exibaVetor() (linha 100) no código principal para que o usuário possa informar os elementos do vetor?
+
+Resposta Selecionada:	
+a. 
+informaVetor()
+
+Respostas:	
+a. 
+informaVetor()
+
+b. 
+montaVetor()
+
+c. 
+checaAnteriores()
+
+d. 
+exibeVetor()
+
+Comentário da resposta:	
+Parabéns! A função informaVetor() permite que o usuário informe os dados. Para testes posteriores, você (desenvolvedor) poderá usar uma atribuição direta ao vetor, caso necessário.
+
+Pergunta 4
+10 em 10 pontos
+
+Correta	
+Após o ajuste realizado na questão anterior, informe os seguintes valores, nesta ordem: 9, 10, 7, 5, 4, 11, 15, 2, 10, 3. O resultado impresso na última linha após a execução é:
+
+Resposta Selecionada:	
+a. 
+9 9 9 9 9 9 9 9 9 9
+
+Respostas:	
+a. 
+9 9 9 9 9 9 9 9 9 9
+
+b. 
+9 10 7 5 4 11 15 2 10 3
+
+c. 
+2 2 2 2 2 2 2 2 2 2
+
+d. 
+2 3 4 5 7 9 10 10 11 15
+
+Comentário da resposta:	
+Parabéns! O valor apresentado pelo código está correto.
+
+Pergunta 5
+10 em 10 pontos
+
+Correta	
+Qual dos ajustes a seguir afeta os valores do resultado impresso na última linha ao executar o algoritmo?
+
+Resposta Selecionada:	
+c. 
+Em exibeVetor(), usar i como índice do vetor v no parâmetro da função escreva() na linha 66.
+
+Respostas:	
+a. 
+Em ordena(), atribuir a j o valor retornado por checaAnteriores().
+
+b. 
+Em exibeVetor(), inicializar i com valor 1.
+
+c. 
+Em exibeVetor(), usar i como índice do vetor v no parâmetro da função escreva() na linha 66.
+
+d. 
+Em informaVetor(), passar v[i+1] como parâmetro da função leia().
+
+Comentário da resposta:	
+Parabéns! Está correto, a função utilizava um índice que não era modificado (v[j]) e, por isso, repetia o mesmo número dez vezes. Ao ajustar por v[i], há outros valores, embora eles ainda não estejam ordenados.
+
+Pergunta 6
+10 em 10 pontos
+
+Correta	
+Depois do ajuste anterior e a partir da mesma entrada (9, 10, 7, 5, 4, 11, 15, 2, 10, 3), a saída do algoritmo deve ser a seguinte:
+
+9 10 7 5 4 11 15 2 10 3
+
+9 10 7 5 4 11 15 2 10 3
+
+9 10 7 5 4 11 15 2 10 3
+
+9 10 7 5 4 11 15 2 10 3
+
+9 10 7 5 4 11 15 2 10 3
+
++
+
+Resultado final:
+
+9 10 7 5 4 11 15 2 10 3
+
+ 
+
+Note que a ordenação executa apenas 5 passos, quando o esperado é que ela fizesse as comparações com cada um dos itens do vetor, ou seja, executaria a repetição 10 vezes. Sugerem-se as seguintes ações no código do procedimento ordena():
+
+Atribuir o resultado de checaAnteriores() a j em vez de i no procedimento ordena().
+Retirar a atribuição j = j+1 da linha 40, pois está incrementando indevidamente a variável.
+Ajustar a condição do “para” usando j < tamanho.
+ 
+
+Quais dessas ações afetam diretamente a quantidade de passos executados no algoritmo?
+
+Resposta Selecionada:	
+d. 
+Ações II e III.
+
+Respostas:	
+a. 
+Ações I e III.
+
+b. 
+Ações I, II e III.
+
+c. 
+Ações I e II.
+
+d. 
+Ações II e III.
+
+Comentário da resposta:	
+Parabéns! Ao atribuir a j o resultado de checaValores(), novos problemas são criados para o algoritmo. Por isso, essa é a única ação entre as três que não ajuda na correção do algoritmo.
+
+Pergunta 7
+10 em 10 pontos
+
+Correta	
+Com o ajuste anterior e usando a mesma entrada de dados, você pode ver que o laço passa a executar 10 vezes, como esperado. No entanto, nenhuma troca de valores acontece. Uma função responsável por essas trocas é checaAnteriores(), que passa por cada valor anterior ao testado na iteração e troca de posição com o testado, caso este seja maior. Um teste de mesa parcial dessa função detalha algumas execuções (considerando a entrada 9, 10, 7, 5, 4, 11, 15, 2, 10, 3):
+
+ordena()
+
+checaAnteriores()
+
+i
+
+j
+
+controle
+
+index
+
+v[index]
+
+valorControle
+
+retorno
+
+0
+
+1
+
+1
+
+1
+
+10
+
+10
+
+1
+
+1
+
+2
+
+2
+
+2
+
+7
+
+7
+
+2
+
+2
+
+3
+
+3
+
+3
+
+5
+
+5
+
+3
+
+ 
+
+Baseado no código do algoritmo, quais seriam as três próximas linhas desse teste de mesa?
+
+Resposta Selecionada:	
+a. 
+
+
+ordena()
+
+checaAnteriores()
+
+i
+
+j
+
+controle
+
+index
+
+v[index]
+
+valorControle
+
+retorno
+
+...
+
+3
+
+4
+
+4
+
+4
+
+4
+
+4
+
+4
+
+4
+
+5
+
+5
+
+5
+
+11
+
+11
+
+5
+
+5
+
+6
+
+6
+
+6
+
+15
+
+15
+
+6
+
+ 
+
+Respostas:	
+a. 
+
+
+ordena()
+
+checaAnteriores()
+
+i
+
+j
+
+controle
+
+index
+
+v[index]
+
+valorControle
+
+retorno
+
+...
+
+3
+
+4
+
+4
+
+4
+
+4
+
+4
+
+4
+
+4
+
+5
+
+5
+
+5
+
+11
+
+11
+
+5
+
+5
+
+6
+
+6
+
+6
+
+15
+
+15
+
+6
+
+ 
+
+b. 
+ordena()
+
+checaAnteriores()
+
+i
+
+j
+
+controle
+
+index
+
+v[index]
+
+valorControle
+
+retorno
+
+...
+
+3
+
+4
+
+4
+
+4
+
+4
+
+4
+
+ 
+
+ 
+
+ 
+
+ 
+
+5
+
+11
+
+4
+
+5
+
+5
+
+6
+
+6
+
+6
+
+15
+
+11
+
+ 
+
+c. 
+
+
+ordena()
+
+checaAnteriores()
+
+i
+
+j
+
+controle
+
+index
+
+v[index]
+
+valorControle
+
+retorno
+
+...
+
+3
+
+4
+
+4
+
+4
+
+4
+
+4
+
+4
+
+4
+
+5
+
+5
+
+5
+
+5
+
+5
+
+5
+
+5
+
+6
+
+6
+
+6
+
+6
+
+6
+
+6
+
+d. 
+
+
+ordena()
+
+checaAnteriores()
+
+i
+
+j
+
+controle
+
+index
+
+v[index]
+
+valorControle
+
+retorno
+
+...
+
+3
+
+4
+
+4
+
+3
+
+5
+
+4
+
+ 
+
+ 
+
+ 
+
+ 
+
+2
+
+7
+
+4
+
+ 
+
+ 
+
+ 
+
+ 
+
+1
+
+10
+
+4
+
+ 
+
+Comentário da resposta:	
+Parabéns! A execução manual e o passo a passo do algoritmo ajudam a entender o que está acontecendo. Assim é possível verificar alternativas para a correção.
+
+Pergunta 8
+10 em 10 pontos
+
+Correta	
+A partir do teste de mesa, você pode detectar que, de fato, os valores não estão se alterando. Qual o motivo e qual a solução? Realize a alteração correta no seu código.
+
+Resposta Selecionada:	
+d. 
+v[index] é sempre igual a valorControle. É necessário alterar a inicialização da variável inteiro index = controle - 1.
+
+Respostas:	
+a. 
+v[index] é sempre maior que valorControle. É necessário alterar para v[index + 1] > valorControle.
+
+b. 
+Atribuição v[index+1] = v[index] está incorreta e deveria ser v[index] = v[index+1].
+
+c. 
+v[index] é sempre igual a valorControle. É necessário alterar a comparação para v[index] >= valorControle.
+
+d. 
+v[index] é sempre igual a valorControle. É necessário alterar a inicialização da variável inteiro index = controle - 1.
+
+Comentário da resposta:	
+Parabéns! O index sempre apontava para a própria posição do vetor sendo comparada e, por isso, sempre resultava em igualdade. Ao fazer com que index aponte para a posição anterior à comparada, permite-se que o algoritmo percorra os itens anteriores ao valor testado, realizando trocas quando necessário.
+
+Pergunta 9
+10 em 10 pontos
+
+Correta	
+Após realizar a alteração correta proposta na questão anterior e usando a mesma entrada de dados (9, 10, 7, 5, 4, 11, 15, 2, 10, 3), pode-se obter o seguinte resultado:
+
+ 
+
+9 10 7 5 4 11 15 2 10 3
+
+9 10 7 5 4 11 15 2 10 3
+
+9 9 10 5 4 11 15 2 10 3
+
+9 9 9 10 4 11 15 2 10 3
+
+9 9 9 9 10 11 15 2 10 3
+
+9 9 9 9 10 11 15 2 10 3
+
+9 9 9 9 10 11 15 2 10 3
+
+9 9 9 9 9 10 11 15 10 3
+
+9 9 9 9 9 10 11 11 15 3
+
+9 9 9 9 9 9 10 11 11 15
+
++
+
+Resultado final:
+
+9 9 9 9 9 9 10 11 11 15
+
+ 
+
+Observa-se que há trocas acontecendo. Porém, o primeiro elemento se propaga adiante em cada iteração do algoritmo. Qual o motivo e a correção para esse problema?
+
+Resposta Selecionada:	
+c. 
+Motivo: após trocas de checaAnterior() não se troca a posição do item verificado (valor de controle) em ordena(). Correção: incluir v[i+1] = aux após a chamada a checaAnteriores() em ordena().
+
+Respostas:	
+a. 
+Motivo: checaAnterior() recebe parâmetros incorretos em ordena(). Correção: alterar a chamada da função para checaAnterior(v, i, aux) no procedimento ordena().
+
+b. 
+Motivo: antes de checaAnterior() não se troca a posição do item verificado (valor de controle) em ordena(). Correção incluir v[i+1] = aux antes da chamada a checaAnteriores() em ordena().
+
+c. 
+Motivo: após trocas de checaAnterior() não se troca a posição do item verificado (valor de controle) em ordena(). Correção: incluir v[i+1] = aux após a chamada a checaAnteriores() em ordena().
+
+d. 
+Motivo: após trocas de checaAnterior() não se troca a posição do item verificado (valor de controle) em ordena(). Correção: incluir v[j-1] = aux após a chamada a checaAnteriores() em ordena().
+
+Comentário da resposta:	
+Parabéns! Com a atribuição a v[i+1] do valor aux, o valor testado assume sua posição correta no vetor.
+
+Pergunta 10
+10 em 10 pontos
+
+Correta	
+Depois das alterações, o algoritmo parece estar correto. Teste algumas situações-limite: 
+
+Informe números em ordem decrescente
+Informe 10 números iguais
+Informe números em ordem crescente
+Baseado nos resultados obtidos, você verifica que:
+
+Resposta Selecionada:	
+a. 
+Não ocorrem falhas em nenhum dos casos.
+
+Respostas:	
+a. 
+Não ocorrem falhas em nenhum dos casos.
+
+b. 
+Ocorre falha ao informar números em ordem decrescente.
+
+c. 
+Ocorre falha ao informar números iguais e também ao informar em ordem decrescente.
+
+d. 
+Ocorre falha ao informar números já ordenados.
+
+Comentário da resposta:	
+Parabéns! Agora o algoritmo está rodando muito bem, você chegou ao fim do processo de teste e correção.
+

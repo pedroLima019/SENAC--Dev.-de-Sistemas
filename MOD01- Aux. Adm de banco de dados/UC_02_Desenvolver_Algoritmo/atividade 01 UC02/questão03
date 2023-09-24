@@ -1,0 +1,28 @@
+programa {
+  funcao inicio() {
+ 
+  inteiro convidados , lugares
+
+  escreva("insira o numero de convidados: \n")
+  leia(convidados)
+   
+   se(convidados > 350 ou convidados <= 0){
+     escreva("numero de convidados inválidos")
+   } 
+
+   se(convidados > 0 e convidados <= 150){
+    escreva("Use o auditório Alfa \n")
+   } 
+  
+   se(convidados > 150 e convidados <= 230){
+       lugares = convidados - 150
+
+       escreva("use o auditório Alfa e adicione ", y, " cadeiras \n")
+   }
+
+   senao{
+    escreva("Use o auditório Beta")
+   }
+
+  }
+}

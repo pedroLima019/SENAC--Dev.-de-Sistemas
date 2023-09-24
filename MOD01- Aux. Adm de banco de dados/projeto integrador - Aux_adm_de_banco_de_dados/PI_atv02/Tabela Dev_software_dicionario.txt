@@ -1,0 +1,21 @@
+Tabela Dev_software:
+
+ID (int): identificador único do desenvolvedor.
+email (varchar(30)): endereço de email do desenvolvedor.
+nome (varchar(30)): nome completo do desenvolvedor.
+cpf (int): número do CPF do desenvolvedor.
+Tabela componentes:
+
+ID (int): identificador único do componente.
+nome_componente (varchar(30)): nome do componente.
+Tabela empresa/projeto:
+
+ID (int): identificador único da empresa/projeto.
+nome_empresa (varchar(30)): nome da empresa.
+nome_projeto (varchar(30)): nome do projeto.
+nome_responsavel (varchar(30)): nome do responsável pelo projeto.
+Tabela doc_texto/pag_html:
+
+ID (int): identificador único do documento.
+nome_projeto (varchar(30)): nome do projeto associado ao documento.
+nome_responsavel (varchar(30)): nome do responsável pelo projeto associado ao documento.

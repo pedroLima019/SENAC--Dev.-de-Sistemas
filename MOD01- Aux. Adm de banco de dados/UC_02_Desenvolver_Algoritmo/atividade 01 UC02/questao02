@@ -1,0 +1,27 @@
+programa {
+ funcao inicio()
+
+{
+
+real a,  mult
+
+escreva("quantidade de convidados:")
+
+leia(a)
+
+mult = a * 0.2  
+
+mult = a * 0.7   
+
+mult = a * 7.0 
+
+    escreva("Quantidade de convidados superior à capacidade máxima: ", mult, "\n")  
+
+escreva(mult = a * 0.2, " litros de café ") 
+
+escreva(mult = a * 0.7, " litros de água ") 
+
+escreva(mult = a * 7.0, " Salgadinhos ")  
+
+
+}

@@ -1,0 +1,53 @@
+programa {
+
+funcao inicio() {
+
+ 
+
+ cadeia dia, nome
+
+ inteiro hora
+
+ 
+
+ escreva("Informe o nome da empresa: ")
+
+ leia(nome)
+
+ escreva("Informe o dia da semana a ser reservado: ")
+
+ leia(dia)
+
+ escreva("Informa o horário a ser reservado: ")
+
+ leia(hora)
+
+ 
+
+ se (hora < 7 ou hora > 23){
+
+     escreva("Horário indisponível!")
+
+ }
+
+ 
+
+    senao se ((dia == "sabado" ou dia == "domingo" e hora > 15)){
+
+        escreva("Horário indisponível")
+
+    }
+
+ 
+
+ senao{
+
+     escreva("Restaurante reservado para ", nome, ", ", dia, " às ", hora, "h!")
+
+ }
+
+}
+
+}
+
+

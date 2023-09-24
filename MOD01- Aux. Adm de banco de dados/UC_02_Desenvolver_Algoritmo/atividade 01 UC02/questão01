@@ -1,0 +1,18 @@
+programa {
+  funcao inicio() {
+   
+   inteiro qte_garcom , totalHoras 
+   real custoFinal , custoPorHora , mult
+
+   escreva("quantidade de garcom:")
+   leia(qte_garcom)
+  
+  escreva("quantidade de horas trabalhadas:")
+   leia(totalHoras)
+
+  custoPorHora = 10,50 
+
+  escreva( mult = qte_garcom * totalHoras * custoPorHora)
+
+  }
+}

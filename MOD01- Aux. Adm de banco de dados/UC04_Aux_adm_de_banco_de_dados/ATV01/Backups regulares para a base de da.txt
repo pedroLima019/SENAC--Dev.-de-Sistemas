@@ -1,0 +1,19 @@
+Backups regulares para a base de dados "uc4atividades", utilizando um agendamento automatizado:
+
+Tipo de backup: Recomenda-se utilizar uma combinação de backups completos e diferenciais para garantir a recuperação eficiente dos dados em caso de perda.
+
+Frequência de backups:
+
+Backup completo: Realizado semanalmente, em um dia e horário que seja conveniente e com menor impacto no desempenho do sistema. Por exemplo, aos domingos à noite.
+Backup diferencial: Realizado diariamente, nos dias em que não ocorre o backup completo. Por exemplo, de segunda a sábado à noite.
+Ferramenta automatizada: Utilize uma ferramenta de backup automatizado, como o cron no Linux ou o Agendador de Tarefas no Windows, para agendar e executar os backups nos horários desejados.
+
+Armazenamento dos backups: É importante armazenar os backups em um local seguro e separado do servidor de banco de dados. Considere opções como um servidor de armazenamento em rede (NAS), armazenamento em nuvem ou mídia externa.
+
+Retenção dos backups: Defina uma política de retenção para os backups, especificando por quanto tempo os backups serão mantidos. Por exemplo:
+
+Backup completo: Mantenha os últimos 4 backups completos, excluindo os mais antigos.
+Backup diferencial: Mantenha os backups diferenciais dos últimos 7 dias.
+Teste de restauração: Regularmente, teste a restauração dos backups para garantir que eles estão completos e podem ser usados em caso de necessidade. Verifique se os dados são recuperáveis e se as operações de restauração são bem-sucedidas.
+
+Monitoramento e notificações: Configure alertas e notificações para acompanhar o status dos backups, certificando-se de que estão sendo executados conforme o agendamento e sem erros. Se possível, implemente um sistema de monitoramento automatizado para detectar falhas ou problemas nos backups.
