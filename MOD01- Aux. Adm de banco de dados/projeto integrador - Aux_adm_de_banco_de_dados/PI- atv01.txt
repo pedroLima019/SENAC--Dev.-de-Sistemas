@@ -1,0 +1,213 @@
+ Documentação de Softaware : Software para Desenvolvedores 
+
+ Introdução: 
+ 
+ Este documento especifica os requisitos de um sistema para desenvolvedores, 
+ fornecendo aos desenvolvedores informações necessárias para a implementação,
+ e também para realizar os testes do sistema. 
+
+
+ Descrição geral do sistema: 
+
+ Mostrar uma visão geral do sistema, caracterizando o escopo e descrevendo
+ os usuários. O sistema para desenvolvedores é uma ferramenta para o processo 
+ de desenvolvimento de software. Fornece uma maneira intuitiva e eficiente para 
+ definir componentes adequados a uma empresa/projeto. Um componente é uma unidade 
+ da metodologia que pode ser manipulada isoladamente.
+
+ Descrição do usuário: 
+
+ Utilizando a ferramenta, o usuário em geral poderá cadastrar novos componentes ou criar componentes a partir de outros 
+ já existentes. Além disso, poderá alterar, remover e consultar componentes já criados. 
+ Alguns componentes podem ser exportados da ferramenta, gerando um documento texto, 
+ páginas HTML ou um arquivo PDF que podem ser visualizados sem utilizar a ferramenta.
+ A ferramenta conterá também testes de validação sobre os componentes criados. 
+
+
+ Requisitos funcionais:
+
+ Cadastro: 
+
+ [RF001] Criar componente:
+
+ Descrição do caso de uso: Permite que o usuário crie e 
+ armazene um novo componente no sistema.
+
+ Prioridade: Essencial , Importante , Desejável  Entradas e pré-condições: não tem.
+
+ Saídas e pós-condição: um componente é cadastrado no sistema
+
+
+ [RF002] Excluir componente:
+
+ Descrição do caso de uso: Permite que o usuário exclua 
+ um componente do cadastro de componentes do sistema.
+
+ Prioridade: Essencial, Importante, Desejável  
+
+ Entradas e pré-condições: recebe como entrada o componente que se deseja excluir
+
+ Saídas e pós-condição: o usuário consegue excluir o componente que deseja 
+
+
+ [RF003] Alterar componente:
+ 
+ Descrição do caso de uso: Este caso de uso permite que o usuário altere 
+ os dados de um componente.
+
+ Prioridade: Essencial , Importante , Desejável  
+
+ Entradas e pré-condições: recebe como entrada o componente que se deseja 
+ alterar.
+
+ Saídas e pós-condição: um componente é alterado no sistema.
+ 
+
+
+ Interface:
+
+
+ [RF001] Visualizar Componente:
+
+ Descrição do caso de uso: Permite que o usuário visualize 
+ os dados de um determinado componente (todos os seus atributos, exceto aqueles 
+ que são considerados suas propriedades). 
+  
+ Prioridade: Essencial, Importante , Desejável  
+
+ Entradas e pré-condições: deve receber como entrada o componente que se 
+ deseja visualizar.
+ 
+ Saídas e pós-condição: o usuário visualiza o componente desejado
+
+
+ [RF002] Copiar componente
+ 
+ Descrição do caso de uso: permite que o usuário copie um 
+ componente do cadastro de componentes do sistema. Ou seja, copia o componente 
+ de onde ele estava e manda a cópia para a área de transferência.
+
+ Prioridade: Essencial, Importante, Desejável  Entradas e pré-condições: 
+ recebe como entrada o componente que se deseja copiar.
+
+ Saídas e pós-condição: o usuário consegue copiar o componente que deseja.
+
+
+ [RF003] Colar componentes
+ 
+ Descrição do caso de uso: permite que o usuário 
+ cole o componente armazenado na área de transferência do sistema 
+ no local indicado.
+ 
+ Prioridade: Essencial, Importante , Desejável 
+ 
+ Entradas e pré-condições: recebe como entrada o componente que 
+ se deseja colar e tem como pré-condição a necessidade de existência 
+ de alguma informação na área de transferência do sistema.
+  
+ Saídas e pós-condição: o usuário consegue colar o componente no local desejado.
+
+
+
+ Compilação:
+
+
+ [RF001] Compilar componente:
+
+ Descrição do caso de uso:  permite que o usuário compile 
+ metodologias. Essa compilação permite que as metodologias sejam analisadas 
+ e comparadas entre si.
+
+ 
+ Prioridade: Essencial, Importante , Desejável
+
+ Entradas e pré-condições: deve receber como entrada as metodologias a serem 
+ compiladas.
+ 
+ Saídas e pós-condição: os componentes das metodlogias são compilados no sistema.
+
+ 
+ Importação/Exportação: 
+
+ 
+ [RF001] Anexar documentos:
+ 
+ Descrição do caso de uso: permite que anexar documentos 
+ gerais a componentes.
+ 
+ Prioridade: Essencial, Importante , Desejável
+
+ Entradas e pré-condições: deve receber como entrada o caminho absoluto para 
+ um arquivo no sistema de arquivos.
+
+ Saídas e pós-condição: O documento é anexado ao componente.
+
+ [RF002] Exportar metodologia
+ Descrição do caso de uso:permite ao usuário a possibilidade 
+ de exportar uma metodologia num determinado formato, como XML.
+
+ Prioridade: Essencial , Importante ,Desejável
+  
+ Entradas e pré-condições: A entrada é uma metodologia a ser exportado 
+ e seus sub-componentes, ou seja, todos os componentes que um determinada 
+ metodologia.
+
+ Saídas e pós-condição: Os componentes são exportados para um arquivo 
+ em um determinado formato (como XML).
+
+ 
+ Requisitos não-funcionais:
+
+
+ [NF001] Usabilidade:
+ 
+ A interface com o usuário é de vital importância para o sucesso do sistema. 
+ Principalmente por ser um sistema que não será utilizado diariamente, o usuário
+ não possui tempo disponível para aprender como utilizar o sistema.
+ O sistema terá uma interface amigável ao usuário primário sem se tornar 
+ cansativa aos usuários mais experientes. 
+
+ Prioridade: Essencial , Importante ,Desejável
+
+
+ [NF002] Desempenho
+ 
+ Embora não seja um requisito essencial ao sistema, deve ser considerada 
+ por corresponder a um fator de qualidade de software. 
+
+ Prioridade: Essencial , Importante ,Desejável
+
+
+ Tecnologias usadas: 
+
+ - SQL 
+ - JavaScript 
+ - React Js 
+ - Phyton 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
