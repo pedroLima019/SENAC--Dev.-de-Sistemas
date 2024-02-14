@@ -22,6 +22,7 @@ public class MinhaAplicacao {
         JButton calcularButton = new JButton("Calcular");
 
         calcularButton.addActionListener(new ActionListener() {
+            
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
