@@ -10,12 +10,6 @@ Este repositório contém uma variedade de projetos, exercícios e trabalhos pr�
 
 O objetivo deste repositório é não só armazenar meus trabalhos, mas também compartilhar meu progresso e aprendizado com outros estudantes, professores e interessados na área de desenvolvimento de sistemas.
 
-## Estrutura do Repositório:
-
-- /projetos: Contém os projetos que desenvolvi ao longo do curso.
-- /exercicios: Aqui estão os exercícios e desafios que completei.
-- /trabalhos_praticos: Inclui os trabalhos práticos realizados durante o curso.
-- /recursos: Qualquer material adicional útil para o curso.
 
 ## Como Contribuir
 
